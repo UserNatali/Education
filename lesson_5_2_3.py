@@ -1,0 +1,6 @@
+red = int(input('Введіть номер першого кольору з RGB формату(від 0 до 255): '))
+green = int(input('Введіть номер другого кольору з RGB формату(від 0 до 255): '))
+blue = int(input('Введіть номер третього кольору з RGB формату(від 0 до 255): '))
+color_tuple = (red, green, blue)
+print(color_tuple)
+print(type(color_tuple))
