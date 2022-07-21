@@ -12,25 +12,23 @@ def my_timetable():
 def my_library():
     library = {"Панас МирнийПанас Мирний": "Хіба ревуть воли як ясла повні", "Іван Франко": "Захар Беркут",
                "Леся Українка": "Лісова Пісня"}
-    choice = input("10.Додати автора з книгою\n20.Видалити автора з книгою\n30.Вихід\n")
+
     while True:
-        if choice == "10":
+        choice = input("10.Додати автора з книгою\n20.Видалити автора з книгою\n30.Вихід\n")
+        if choice == "30":
+            break
+        elif choice == "10":
             author = input("Введіть автора: ")
             book = input("Введіть назву книги: ")
             library[author] = book
             print(library)
-            break
         elif choice == "20":
             author_del = input("Введіть автора: ")
             if author_del in library:
                 library.pop(author_del)
                 print(library)
-                break
             else:
                 print("Книги з таким автором в бібліотеці нема")
-                break
-        elif choice == "30":
-            break
         else:
             print("Неправильний вибір")
 
